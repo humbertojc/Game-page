@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Document</title>
+    <link rel="stylesheet" href="../Css/Styles.css">
+    <link rel="stylesheet" href="../Css/style.css">
+</head>
+<body>
+    <header class="cabezera">
+
+        <input type="checkbox" id="bar">
+        <label for="bar" class="icon-menu"><a href="#" class="tit"></a>Menu</label>
+
+        <div class="cab_nav">
+            <img src="../Img/logo.png" alt="logo" class="logo_img">
+            <h2 class="nom_logo">DOTA 2</h2>
+            <ul>
+                <li><a href="../Nav/index.html">Inicio</a></li>
+                <li><a href="../Nav/informacion.html">Información</a></li>
+                <li><a href="../Nav/Mercado.html">Mercado</a></li>
+                <li><a href="../Nav/acceder.html">Entrar</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="img_fondo3"></div>
+    <div class="form-container">
+        <form action="#" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+
+            <div class="form-group">
+                <label for="atributos">Atributos:</label>
+                <textarea type="text" id="atributos" name="atributos" rows="2" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="pasiva">Pasiva:</label>
+                <textarea type="text" id="pasiva" name="pasiva" rows="3" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="descripcion">Descripción:</label>
+                <textarea id="descripcion" name="descripcion" rows="4" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="precio">Precio:</label>
+                <input type="number" id="precio" name="precio" step="0.01" required>
+            </div>
+
+            <div class="form-group">
+                <label for="imagen">Imagen:</label>
+                <input type="file" id="imagen" name="imagen" accept="image/*" required>
+            </div>
+
+            <button type="submit">Cargar</button>
+        </form>
+    </div>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Atributos</th>
+                    <th>Pasiva</th>
+                    <th>Descripción</th>
+                    <th>Precio</th>
+                    <th>Imagen</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="dataTable">
+                <!-- Los datos se insertarán aquí dinámicamente con JavaScript -->
+            </tbody>
+        </table>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+<script src="../JS/Admin.js"></script>
+</html>

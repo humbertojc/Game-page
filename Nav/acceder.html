@@ -15,22 +15,46 @@
 
         <div class="cab_nav">
             <img src="../Img/logo.png" alt="logo" class="logo_img">
-            <h2 class="nom_logo">Warcraft</h2>
+            <h2 class="nom_logo">DOTA 2</h2>
             <ul>
                 <li><a href="../Nav/index.html">Inicio</a></li>
-                <li><a href="../Nav/informacion.html">Información</a></li>
+                <li><a href="../Nav/informacion.html">Información</a></li>>
+                <li><a href="../Nav/Mercado.html">Mercado</a></li>
+                <li><a href="../Nav/Admin.html">Tienda</a></li>
                 <li><a href="../Nav/acceder.html">Entrar</a></li>
             </ul>
         </div>
     </header>
     <div class="img_fondo">
     </div>
-    <form action="" class="form_ing">
+<!-- 
+<form action="" class="form_ing">
         <h2 class="info_h2">Acceder</h2>
         <input type="text" class="formula" name="usuario" placeholder="Usuario">
         <input type="password" class="formula" name="pass" placeholder="Password">
         <input type="submit" class="enviar">
     </form>
+-->
+    <div class="form_ing">
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="usuario">Usuario:</label>
+                <input type="text" id="usuario" name="usuario" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <button type="submit" class="login-button">Ingresar</button>
+
+            <div class="links">
+                <a href="#">Recuperar contraseña</a>
+                <a href="#">Crear cuenta</a>
+            </div>
+        </form>
+    </div>
     <footer class="foot_2">
         <p class="foot_p">Pag Protegida</p>
     </footer>
